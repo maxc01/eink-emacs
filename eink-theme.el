@@ -100,8 +100,8 @@
    `(org-agenda-date-weekend ((t (:foreground ,fg :weight normal))))
    `(org-agenda-structure ((t (:foreground ,fg :weight bold))))
    `(org-block ((t (:foreground ,fg))))
-   `(org-block-begin-line ((t (:foreground ,fg-light :height 0.8))))
-   `(org-block-end-line ((t (:foreground ,fg-light :height 0.8))))
+   `(org-block-begin-line ((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
+   `(org-block-end-line ((t (:overline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
    `(org-verbatim ((t (:foreground ,fg :weight semi-bold))))
    `(org-date ((t (:foreground ,fg) :underline)))
    `(org-done ((t (:foreground ,fg-light))))
@@ -121,6 +121,7 @@
    `(org-todo ((t (:foreground ,fg))))
    `(org-verse ((t (:inherit org-block :slant italic))))
    `(org-table ((t (:foreground ,fg-table))))
+
 
    ;; powerline
    `(powerline-active1 ((t (:background "grey22" :foreground ,bg :inherit mode-line))))
