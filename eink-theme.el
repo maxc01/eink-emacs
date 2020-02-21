@@ -108,7 +108,7 @@
    `(org-hide ((t (:foreground ,bg))))
    ;; use :overline to give headings more top margin
    `(org-level-1 ((t (:foreground ,fg :weight semi-bold :height 1.3))))
-   `(org-level-2 ((t (:foreground ,fg :weight semi-bold :height 1.1 :overline ,bg))))
+   `(org-level-2 ((t (:foreground "#8b95ee" :weight semi-bold :height 1.1))))
    `(org-level-3 ((t (:foreground ,fg :weight semi-bold :height 1.1 :overline ,bg))))
    `(org-level-4 ((t (:foreground ,fg :weight semi-bold :height 1.1 :overline ,bg))))
    `(org-level-5 ((t (:foreground ,fg :weight semi-bold :height 1.1 :overline ,bg))))
