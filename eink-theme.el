@@ -78,7 +78,7 @@
    `(gnus-header-from ((t (:foreground ,fg))))
    `(gnus-header-name ((t (:foreground ,fg))))
    `(gnus-header-subject ((t (:foreground ,fg))))
-   `(highlight ((t nil)))
+   `(highlight ((t (:background  "#eeeee8"))))
    `(ido-first-match ((t (:foreground ,fg))))
    `(ido-only-match ((t (:foreground ,fg))))
    `(ido-subdir ((t (:foreground ,fg))))
@@ -91,7 +91,7 @@
    `(mode-line-inactive ((t (:background ,bg-light :foreground ,fg))))
    `(mode-line-minor-mode ((t (:weight ultra-light))))
    `(modeline ((t (:background ,bg :foreground ,fg :height 0.8))))
-   `(region ((t (:background "#eeeee8" :foreground ,fg))))
+   `(region ((t (:background "#add8e6" :foreground ,fg))))
    `(slime-repl-inputed-output-face ((t (:foreground ,fg))))
    `(whitespace-line ((t (:background ,bg-highlight-2 :foreground ,fg))))
 
