@@ -1,7 +1,9 @@
 ;;; eink-theme.el --- E Ink color theme
 
+;; Copyright (C) 2020-2021 Xingchen
 ;; Copyright (C) 2013-2016 Marian Schubert
 
+;; Author: Xingchen <xingchen92@gmail.com>
 ;; Author: Marian Schubert <marian.schubert@gmail.com>
 ;; URL: http://github.com/maio/eink-emacs
 ;; Version: 1.0
@@ -85,12 +87,12 @@
    `(isearch ((t (:background "#eeeee8" :foreground ,fg))))
    `(link ((t (:foreground ,fg))))
    `(minibuffer-prompt ((t (:foreground ,fg :weight bold))))
-   `(mode-line ((t (:foreground "#f9bf45" :background "#6a4c9c"))))
-   `(mode-line-buffer ((t (:foreground ,fg :weight bold))))
+
+   ;; Mode line faces
+   `(mode-line ((t (:box (:line-width 1 :color "#1A2F54") :foreground "#f9bf45" :background "#6a4c9c"))))
+   `(mode-line-inactive ((t (:box (:line-width 1 :color "#4E4E4C") :foreground "#F0F0EF" :background "#9B9C97"))))
    `(mode-line-buffer-id ((t (:foreground "#eab700" :weight bold))))
-   `(mode-line-inactive ((t (:background ,bg-light :foreground ,fg))))
-   `(mode-line-minor-mode ((t (:weight ultra-light))))
-   `(modeline ((t (:background ,bg :foreground ,fg :height 0.8))))
+
    `(region ((t (:background "#add8e6" :foreground ,fg))))
    `(slime-repl-inputed-output-face ((t (:foreground ,fg))))
    `(whitespace-line ((t (:background ,bg-highlight-2 :foreground ,fg))))
