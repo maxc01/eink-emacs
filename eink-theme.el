@@ -94,6 +94,7 @@
    `(mode-line-buffer-id ((t (:foreground "#eab700" :weight bold))))
 
    `(region ((t (:background "#add8e6" :foreground ,fg))))
+   `(hl-line ((t (:background "#e0e0e0" ,@(and (>= emacs-major-version 27) '(:extend t))))))
    `(slime-repl-inputed-output-face ((t (:foreground ,fg))))
    `(whitespace-line ((t (:background ,bg-highlight-2 :foreground ,fg))))
 
@@ -103,7 +104,8 @@
    `(org-agenda-date-weekend ((t (:foreground ,fg :weight normal))))
    `(org-agenda-structure ((t (:foreground ,fg :weight bold))))
    `(org-block ((t (:foreground ,fg))))
-   `(org-block-begin-line ((t (:foreground "#008ED1" :background "#EAEAFF" :box (:color "#ccccbb" :line-width -1)))))
+   ;; `(org-block-begin-line ((t (:foreground "#008ED1" :background "#EAEAFF" :box (:color "#ccccbb" :line-width -1)))))
+   `(org-block-begin-line ((t (:foreground "#008ED1" :background "#EAEAFF" :inherit fixed-pitch))))
    `(org-block-end-line ((t (:inherit org-block-begin-line))))
    `(org-verbatim ((t (:foreground ,fg :weight semi-bold))))
    `(org-date ((t (:foreground ,fg) :underline)))
@@ -233,10 +235,6 @@
    `(eshell-prompt ((t (:foreground ,fg :weight bold))))
    `(cider-result-overlay-face ((t (:weight bold))))
 
-   ;; evil-quickscope
-   `(evil-quickscope-first-face ((t (:foreground ,fg :background "#eeeee8"))))
-   `(evil-quickscope-second-face ((t (:foreground ,fg :background ,bg-highlight-3))))
-
    ;; evil-snipe
    `(evil-snipe-first-match-face ((t (:foreground ,fg :background "#eeeee8"))))
    `(evil-snipe-matches-face ((t (:foreground ,fg :background ,bg-highlight-3))))
@@ -247,10 +245,11 @@
    `(evil-ex-substitute-replacement ((t (:background ,bg-highlight :underline nil :foreground ,fg))))))
 
 ;;;###autoload
-(when load-file-name
-  (add-to-list
-   'custom-theme-load-path
-   (file-name-as-directory (file-name-directory load-file-name))))
+(when (and (boundp 'custom-theme-load-path)
+           load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'eink)
+
 ;;; eink-theme.el ends here
