@@ -130,9 +130,6 @@
    `(org-table ((t (:foreground ,fg-table))))
 
 
-   ;; powerline
-   `(powerline-active1 ((t (:background "grey22" :foreground ,bg :inherit mode-line))))
-   `(powerline-active2 ((t (:background "grey40" :foreground ,bg :inherit mode-line))))
 
    ;; magit
    `(magit-header ((t (:weight semi-bold))))
@@ -171,16 +168,6 @@
    `(dired-subtree-depth-2-face ((t (:inherit default))))
    `(dired-subtree-depth-3-face ((t (:inherit default))))
    `(dired-subtree-depth-4-face ((t (:inherit default))))
-
-   ;; helm
-   `(helm-source-header ((t (:foreground ,fg :background "grey90" :weight bold))))
-   `(helm-header ((t (:foreground ,fg))))
-   `(helm-selection-line ((t (:inherit region :weight bold))))
-   `(helm-selection ((t (:background ,bg-highlight))))
-   `(helm-ff-directory ((t (:foreground ,fg :weight bold))))
-   `(helm-ff-dotted-directory ((t (:foreground ,fg :weight bold))))
-   `(helm-ff-symlink ((t (:foreground ,fg :slant italic))))
-   `(helm-ff-executable ((t (:foreground ,fg))))
 
    ;; iedit
    `(iedit-occurrence ((t (:background ,bg-highlight-3 :foreground ,fg))))
