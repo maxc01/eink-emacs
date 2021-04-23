@@ -97,8 +97,7 @@
    `(mode-line-inactive ((t (:box (:line-width 1 :color "#4E4E4C") :foreground "#F0F0EF" :background "#9B9C97"))))
    `(mode-line-buffer-id ((t (:foreground "#eab700" :weight bold))))
 
-   `(region ((t (:background "#add8e6" :foreground ,fg))))
-   `(hl-line ((t (:background "#e0e0e0" ,@(and (>= emacs-major-version 27) '(:extend t))))))
+   `(region ((t (:background ,light-pink :foreground ,fg :extend t))))
    `(slime-repl-inputed-output-face ((t (:foreground ,fg))))
    `(whitespace-line ((t (:background ,bg-highlight-2 :foreground ,fg))))
 
@@ -165,7 +164,7 @@
    `(flycheck-warning ((t (:inherit warning))))
 
    ;; dired
-   `(dired-directory ((t (:weight bold))))
+   `(dired-directory ((t (:weight bold :foreground ,light-blue))))
    `(dired-subtree-depth-1-face ((t (:inherit default))))
    `(dired-subtree-depth-2-face ((t (:inherit default))))
    `(dired-subtree-depth-3-face ((t (:inherit default))))
@@ -217,18 +216,11 @@
    ;; web-mode
    `(web-mode-current-element-highlight-face ((t (:inherit normal :weight bold :foreground ,fg))))
 
-   ;; mmm-mode
-   `(mmm-default-submode-face ((t (:inherit normal :background "#ffffef"))))
-
    ;; misc
    `(idle-highlight ((t (:background ,bg-highlight))))
    `(yas-field-highlight-face ((t (:background "#eeeee8" :foreground ,fg))))
    `(eshell-prompt ((t (:foreground ,fg :weight bold))))
    `(cider-result-overlay-face ((t (:weight bold))))
-
-   ;; evil-snipe
-   `(evil-snipe-first-match-face ((t (:foreground ,fg :background "#eeeee8"))))
-   `(evil-snipe-matches-face ((t (:foreground ,fg :background ,bg-highlight-3))))
 
    ;; evil
    `(evil-ex-lazy-highlight ((t (:background ,bg-highlight-2))))
