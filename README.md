@@ -5,7 +5,7 @@ on E Ink devices.
 
 ## Example
 
-![Example](https://raw.githubusercontent.com/maio/eink-emacs/master/images/example.png)
+![Example](./images/example.png)
 
 ## Why?
 
