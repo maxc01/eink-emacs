@@ -46,7 +46,10 @@
       (fg-light "#ddddd8")
       (bg-highlight "#FFF1AA")
       (bg-highlight-2 "LightCyan")
-      (bg-highlight-3 "LightGreen"))
+      (bg-highlight-3 "LightGreen")
+      (light-blue "#80c0ff")
+      (light-violet "#d9c5e4")
+      (light-pink "#ffc4e4"))
 
   (custom-theme-set-faces
    'eink
@@ -129,7 +132,8 @@
    `(org-verse ((t (:inherit org-block :slant italic))))
    `(org-table ((t (:foreground ,fg-table))))
 
-
+   ;; org-roam
+   `(org-roam-link ((t (:inverse-video t :foreground ,light-pink))))
 
    ;; magit
    `(magit-header ((t (:weight semi-bold))))
